@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<input type="file" id="myfile">
+		<button onclick="uploadFile()">Click</button>
+		<script>
+			const fileDom=document.querySelector('#myfile');
+			
+			function uploadFile(){
+				console.log(fileDom.files[0]);
+			}
+		</script>
+	</body>
+</html>
